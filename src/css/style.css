@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+body {
+  padding: 20px;
+  background-image: linear-gradient(
+    105deg,
+    rgb(80, 80, 236),
+    rgb(1, 20, 1)
+  ); /*dégradé en arriere plan*/
+}
+
+main {
+  border: solid rgb(95, 95, 95) 1px; /* couleur des bords*/
+  /* box-shadow: rgb(70, 69, 69) 5px 5px 5px; */
+  animation: shadow 10s ease-in-out infinite;
+  border-radius: 15px;
+}
+
+/* ANIMATION BOX SHADOW */
+@keyframes shadow {
+  0% {
+    box-shadow: rgb(87, 86, 86) 5px 5px 5px 5px;
+  }
+  10% {
+    box-shadow: rgb(80, 79, 79) 5px 5px 5px 6px;
+  }
+  20% {
+    box-shadow: rgb(44, 43, 43) 5px 5px 5px 7px;
+  }
+  30% {
+    box-shadow: rgb(24, 23, 23) 5px 5px 5px 8px;
+  }
+  40% {
+    box-shadow: rgb(15, 15, 15) 5px 5px 5px 9px;
+  }
+  50% {
+    box-shadow: rgb(0, 0, 0) 5px 5px 5px 10px;
+  }
+  60% {
+    box-shadow: rgb(20, 20, 20) 5px 5px 5px 9px;
+  }
+  70% {
+    box-shadow: rgb(34, 34, 34) 5px 5px 5px 8px;
+  }
+  80% {
+    box-shadow: rgb(44, 43, 43) 5px 5px 5px 7px;
+  }
+  90% {
+    box-shadow: rgb(56, 56, 56) 5px 5px 5px 6px;
+  }
+  100% {
+    box-shadow: rgb(87, 87, 87) 5px 5px 5px 5px;
+  }
+}
+
+/* TOP */
+
+.top {
+  padding: 15px;
+  background-color: rgba(0, 162, 255, 0.205); /* couleur du TOP */
+  border-radius: 15px 15px 0 0;
+  display: flex;
+  justify-content: center; /*centrer les éléments du TOP*/
+}
+
+/* TOP IMAGE */
+
+.top .photo {
+  margin: 5px;
+  border: solid rgb(5, 5, 5) 3px;
+  border-radius: 10%;
+  width: 80%;
+}
+
+/* TOP TEXT */
+
+.top .texte {
+  display: block;
+}
+
+.top .texte h1 {
+  font-size: 4vw;
+}
+
+.top .texte .titre1 {
+  width: 50%;
+}
+
+.top .texte h2 {
+  color: gray;
+  font-size: 3vw;
+}
+
+.top .texte .titre2 {
+  width: 50%;
+}
+
+/* MID */
+
+.mid {
+  padding: 5%;
+  border-top: solid rgb(95, 95, 95) 1px;
+  border-bottom: solid rgb(95, 95, 95) 1px;
+}
+
+.mid .description {
+  margin: 5% 10%;
+  color: white; /*couleur du texte */
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.mid .comp {
+  display: flex;
+  justify-content: center;
+}
+
+.mid .comp h3 {
+  color: white;
+}
+
+/* BOTTOM */
+
+.bottom {
+  border-bottom: solid rgb(95, 95, 95) 1px;
+}
+
+.bottom h2 {
+  margin-left: 15px;
+  color: white;
+}
+
+/* BOTTOM FORMULAIRE */
+
+form {
+  margin: 2.5vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.flexform {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+form .mail {
+  margin: 5px;
+  width: 20vw;
+}
+form .name {
+  margin: 5px;
+  width: 20vw;
+}
+
+form .message {
+  resize: none; /* empeche de modifier la taille du message */
+  width: 50vw;
+}
+
+#submit {
+  top: 20px;
+}
+
+.submit {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  box-shadow: gray 5px 0px 10px 1px;
+}
+
+textarea {
+  margin: 10px;
+  box-shadow: gray 5px 0px 10px 1px;
+}
+
+/* FOOTER */
+
+footer {
+  color: rgb(148, 141, 141);
+}
+
+footer h2 {
+  display: flex;
+  justify-content: center;
+}
+
+footer .network {
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+footer a .github {
+  width: 20px;
+  margin-right: 5px;
+}
+
+footer a .linkedin {
+  width: 20px;
+  margin-left: 5px;
+}

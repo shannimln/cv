@@ -1,0 +1,92 @@
+.progress_left p,
+.progress_right p {
+  margin: 5px;
+  color: white;
+}
+
+.progress {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+
+.container {
+  margin: 5px;
+  border: solid white 1px;
+}
+
+.skills {
+  height: 10px;
+  background-color: white;
+}
+
+.html {
+  animation: animation_html 3s ease-in-out forwards;
+}
+
+.css {
+  animation: animation_css 3s ease-in-out forwards;
+}
+.php {
+  animation: animation_php 3s ease-in-out forwards;
+}
+.js {
+  animation: animation_js 3s ease-in-out forwards;
+}
+
+/* PRISE EN CHARGE TELEPHONE */
+
+@media screen and (max-width: 500px) {
+  .progress {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* PRISE EN CHARGE PC */
+
+@media screen and (min-width: 500px) {
+  .container {
+    min-width: 200px; /*rendre la progress bar plus grande quand on passe sous format grand ecran*/
+  }
+}
+
+/* ANIMATION */
+
+/* HTML */
+@keyframes animation_html {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 75%;
+  }
+}
+/* CSS */
+@keyframes animation_css {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 65%;
+  }
+}
+/* PHP */
+@keyframes animation_php {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 20%;
+  }
+}
+/* JavaScript */
+@keyframes animation_js {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 5%;
+  }
+}
